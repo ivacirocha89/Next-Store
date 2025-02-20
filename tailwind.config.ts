@@ -9,7 +9,10 @@ export default {
   theme: {
     fontFamily:{
       sans: 'var(--font-inter)'
-    }
+    },
+    gridTemplateRows: {
+      app: 'min-contente max-content'
+    },
   },
   plugins: [],
 } satisfies Config;
