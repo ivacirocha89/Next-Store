@@ -1,18 +1,22 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontFamily:{
-      sans: 'var(--font-inter)'
-    },
-    gridTemplateRows: {
-      app: 'min-contente max-content'
+    extend:  { 
+      fontFamily:{
+        sans: 'var(--font-inter)'
+      },
+      gridTemplateRows: {
+        app: 'min-contente max-content'
+      },
     },
   },
   plugins: [],
-} satisfies Config;
+} 
+
+export default config
